@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1.5;
+  background-color: #2980b9;
+}
+.container {
+  max-width: 600px;
+  margin-top: 50px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.cinema {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.cinema:hover .cinema-info {
+  transform: scale(1);
+}
+
+.cinema-img {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cinema-img img {
+  display: block;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+}
+
+.cinema-info {
+  position: absolute;
+  z-index: -1;
+  width: 270px;
+  height: 515px;
+  top: 0;
+  transform: scale(0);
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden; 
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.55, 0.085, 0.32, 1.25);
+  transform-origin: top center;
+}
+
+.cinema-info__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 345px;
+  text-align: center;
+  align-items: center;
+}
+
+.cinema-name {
+  color: #333;
+  margin-top: auto;
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.cinema-text {
+  margin: 0;
+  color: #aaabb0;
+  margin-bottom: 15px;  
+}
+
+.costs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.new-cost {
+  font-weight: bold;
+  color: #51ce75;
+}
+
+.old-cost {
+  color: #aaabb0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.buy-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #2f2f2f;
+  color: #fff;
+  text-transform: uppercase;
+}
