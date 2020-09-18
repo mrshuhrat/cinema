@@ -21,6 +21,7 @@ body {
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .img {
   max-width: 100%;
@@ -43,6 +44,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
